@@ -1,0 +1,22 @@
+[package]
+name = "stm32f4xx-hal-examples"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+cortex-m = { version = "0.7.7", features = [
+    "inline-asm",
+    "critical-section-single-core",
+] }
+cortex-m-rt = "0.7.6"
+
+panic-probe = { version = "1.0.0", features = ["print-defmt"] }
+
+embedded-hal = "1.0"
+embedded-hal-nb = "1.0"
+stm32f4xx-hal = { version = "0.23.0", features = ["stm32f446", "defmt"] }
+
+defmt-rtt = "1.2.0"
+defmt = "1.1.1"
+
+fugit = "0.3.7"

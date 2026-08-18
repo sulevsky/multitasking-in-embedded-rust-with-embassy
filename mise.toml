@@ -1,9 +1,17 @@
 [env]
 DEFMT_LOG = "trace"
-INIT_DATE_TIME = "2026-09-18T23:56:04"
+
+[tasks.polling]
+run = "cargo run --example polling"
 
 [tasks.blocking]
-run = "cargo run --bin blocking"
+run = "cargo run --example blocking"
 
 [tasks.interrupt]
-run = "cargo run --bin interrupt"
+run = "cargo run --example interrupt"
+
+[tasks.dma]
+run = "cargo run --example dma"
+
+[tasks.embassy]
+run = "cargo run --example embassy"
